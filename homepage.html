@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>My Portfolio</span>
+            </div>
+            <div class="links">
+                <a href="homepage.html">Home</a>
+                <a href="aboutpage.html">About</a>
+                <a href="portfoliopage.html">Skill</a>
+            </div>
+            <button>Contact Us</button>
+        </div>
+    </nav>
+    <section id="content">
+        <div class="content">
+            <div class="main-content">
+                <h1>Welcome to My Portfolio</h1>
+                <span>Nadiah Indrianti</span>
+                <p>Mahasiswi akhir dengan pengalaman yang berharga dalam mengerjakan berbagai proyek baik di bidang frontend maupun backend.</p>
+                <div class="buttons">
+                    <button>Hire me</button>
+                    <button>See my Work</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image.jpg" alt="Portfolio Image">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Saya Nadiah Indrianti, mahasiswi akhir dengan keahlian di bidang frontend dan backend development. Saya berfokus pada pengembangan solusi digital yang inovatif dengan menggunakan berbagai teknologi seperti JavaScript, Go, dan React. Pengalaman saya mencakup bekerja dengan tim lintas disiplin untuk menciptakan pengalaman pengguna yang optimal dan membangun aplikasi web yang scalable dan efisien.</p>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nadiah Indrianti | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="https://github.com/nadiahindrianti">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 1});
+    </script>
+    <script>
+        const hamburg = document.querySelector('.hamburg')
+        const cancel = document.querySelector('.cancel')
+        const navbar = document.querySelector('.dropmenu');
+        
+        hamburg.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(0px)"
+            hamburg.style.display = 'none'
+        })
+        cancel.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(-300px)"
+            hamburg.style.display = 'block'
+        })
+    </script>
+</body>
+</html>

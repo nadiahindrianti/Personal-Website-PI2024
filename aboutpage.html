@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>My Portfolio</span>
+            </div>
+            <div class="links">
+                <a href="homepage.html">Home</a>
+                <a href="aboutpage.html">About</a>
+                <a href="portfoliopage.html">Skill</a>
+            </div>
+            <button>Contact Us</button>
+        </div>
+    </nav>
+    
+    <section id="about" class="about-section">
+        <div class="content">
+            <h1>About Me</h1>
+            <p>
+                Hello! I'm Nadiah Indrianti, a passionate final-year student with expertise in both frontend and backend development. 
+                I specialize in building innovative digital solutions using a range of technologies including JavaScript, Go, and React. 
+                My journey in web development has been shaped by working with cross-disciplinary teams, where I focused on optimizing 
+                user experiences and developing scalable, efficient web applications.
+            </p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nadiah Indrianti | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="https://github.com/nadiahindrianti">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 1});
+    </script>
+    <script>
+        const hamburg = document.querySelector('.hamburg')
+        const cancel = document.querySelector('.cancel')
+        const navbar = document.querySelector('.dropmenu');
+        
+        hamburg.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(0px)"
+            hamburg.style.display = 'none'
+        })
+        cancel.addEventListener('click', ()=>{
+            navbar.style.transform = "translateY(-300px)"
+            hamburg.style.display = 'block'
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 33, 99);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    color: white;
+}
+
+nav {
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: brightness(100%);
+    background-color:  rgb(19, 33, 99);
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo span {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-container .links a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover {
+    color: #fca61f;
+    text-shadow: 1px 1px #fca61f;
+}
+
+nav button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fca61f;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s linear;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #fca61f;
+    border: none;
+    outline: none;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #fca61f;
+    border: 2px solid #fca61f;
+}
+
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    background-color: rgb(19, 33, 99);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #ff6347;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+footer .social-links a:hover {
+    color: #ff4500;
+}
